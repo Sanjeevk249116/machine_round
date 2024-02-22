@@ -1,0 +1,59 @@
+.grid{
+  width: 97%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(7,1fr);
+}
+.grid>div{
+  height: 400px;
+  background: rgb(243, 247, 247);
+  border: 1px solid black;
+}
+.grid>div>p{
+  display: flex;
+  margin: 0px;
+  padding: 7px 3px;
+  
+  background-color: greenyellow;
+  justify-content: center;
+}
+.cart{
+ 
+  display: flex;
+  flex-wrap: wrap;
+}
+.ptage{
+  flex-grow: 1;
+  height: 50px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: palegoldenrod;
+  border: 1px solid red;
+}
+.ptage:nth-child(n + 4) {
+  flex-basis: 100%; /* Force the 4th and subsequent p tags to start on a new line */
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container p {
+  flex-grow: 1;
+  max-width: calc(33.33%); /* 1/3 width with 10px gap */
+   /* Adjust margin as needed */
+}
+
+.container p:nth-child(3n + 1) {
+  flex-basis: calc(33.33% ); 
+}
+
+
+
+.container p:nth-child(3n ) {
+  flex-basis: calc(33.33% - 10px); 
+}
+
+
