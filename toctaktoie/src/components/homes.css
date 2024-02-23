@@ -1,0 +1,46 @@
+.container {
+  text-align: center;
+}
+.title {
+  margin-top: 60px;
+  color: white;
+  font-size: 36px;
+}
+.title span {
+  color: red;
+  font-size: 38px;
+}
+.board{
+    display: flex;
+    justify-content: center;
+}
+.boxes{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #1f3540;
+    border: 4px solid #0f1b21;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.boxes h1{
+  color: white;
+}
+.o{
+    color: red;
+}
+.reset {
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: cyan;
+  cursor: pointer;
+  font-size: 26px;
+  margin-top: 50px;
+}
+.reset:hover{
+    background-color: rgb(242, 198, 198);
+}
